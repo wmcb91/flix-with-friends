@@ -1,11 +1,13 @@
-{{email-input email=credentials.email}}
-{{password-input password=credentials.password}}
-{{password-confirmation-input password=credentials.passwordConfirmation}}
+<div class='sign-up-template'>
+  {{email-input email=credentials.email}}
+  {{password-input password=credentials.password}}
+  {{password-confirmation-input password=credentials.passwordConfirmation}}
 
-<button type="submit" class="btn btn-primary" {{action "submit"}}>
-  Sign Up
-</button>
+  <button type="submit" class="btn btn-primary" {{action "submit"}}>
+    Sign Up
+  </button>
 
-<button class="btn btn-default" {{action "reset"}}>
-  Cancel
-</button>
+  <button class="btn btn-default" {{action "reset"}}>
+    Cancel
+  </button>
+</div>

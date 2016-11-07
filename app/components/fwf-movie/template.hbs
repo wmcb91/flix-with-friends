@@ -1,0 +1,9 @@
+<h3 class="movie-title">{{title}}</h3>
+<h4>{{director}}</h4>
+<h4>{{yearReleased}}</h4>
+<h4>{{genre}}</h4>
+<form {{action 'createScreening' on='submit'}}>
+  {{input placeholder='Rating out of 5'
+          class='input-group form-control'
+          value=form.rating}}
+</form>

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
+  <div class="container-fluid my-application">
     {{navbar-header}}
 
     <div class="collapse navbar-collapse" id="navigation">
@@ -12,7 +12,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {{#if isAuthenticated}}
-        <li>{{#link-to "change-password"}}Find Movies{{/link-to}}</li>
+        <li>{{#link-to "movies"}}Find Movies{{/link-to}}</li>
         <li>{{#link-to "change-password"}}My Movies{{/link-to}}</li>
         <li>{{#link-to "change-password"}}My Queue{{/link-to}}</li>
         <li>{{#link-to "change-password"}}My Friends{{/link-to}}</li>
@@ -28,6 +28,7 @@
 </nav>
 
 <h1>Welcome to Flix With Friends</h1>
+<h4>my-application template</h4>
 
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
