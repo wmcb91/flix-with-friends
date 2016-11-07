@@ -3,18 +3,18 @@
   padding: 0;
 
   .form-horizontal .form-group {
-    margin: 0 0 15px;
     margin-left: 0;
     margin-right: 0;
   }
 }
 
+// Sign In View
 .sign-in {
+  margin-top: 10vh;
+  padding: 15px;
+
   h2 {
+    margin: 10px;
     text-align: center;
   }
-}
-
-.ember-text-field {
-  width: 100%;
 }
