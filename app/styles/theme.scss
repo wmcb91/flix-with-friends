@@ -1,16 +1,13 @@
-
-
-// Sign In View
-.sign-in {
+// Sign In and Sign up View
+.sign-in,
+.sign-up {
   background-color: $off-white;
   border: 2px solid $charcoal;
   border-radius: 3px;
 
-  .sign-in-button {
+  .sign-in-button,
+  .sign-up-button {
     font-size: 1.2em;
     width: 100%;
   }
 }
-
-
-// Sign Up View

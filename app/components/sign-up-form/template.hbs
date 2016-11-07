@@ -1,13 +1,11 @@
 <div class='sign-up-template'>
   {{email-input email=credentials.email}}
+  {{username-input username=credentials.username}}
+      {{!-- ^ probably incorrect ^ --}}
   {{password-input password=credentials.password}}
   {{password-confirmation-input password=credentials.passwordConfirmation}}
 
-  <button type="submit" class="btn btn-primary" {{action "submit"}}>
+  <button type="submit" class="btn btn-primary sign-up-button" {{action "submit"}}>
     Sign Up
-  </button>
-
-  <button class="btn btn-default" {{action "reset"}}>
-    Cancel
   </button>
 </div>

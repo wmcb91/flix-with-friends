@@ -1,3 +1,7 @@
-<h2>Sign Up</h2>
-
-{{sign-up-form submit="signUp"}}
+<div class="sign-up">
+  <h2>Sign Up</h2>
+  {{sign-up-form submit="signUp"}}
+  <h5>
+    Already have an account? {{#link-to "sign-in"}}Sign in now.{{/link-to}}
+  </h5>
+</div>
