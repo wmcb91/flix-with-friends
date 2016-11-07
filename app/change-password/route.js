@@ -7,11 +7,11 @@ export default Ember.Route.extend({
   actions: {
     changePassword (passwords) {
       this.get('auth').changePassword(passwords)
-      .then(() => this.transitionTo('application'))
       .then(() => {
         this.get('flashMessages')
         .success('Successfully changed your password!');
       })
+      .then(() => this.transitionTo('application'))
       .catch(() => {
         this.get('flashMessages')
         .danger('There was a problem. Please try again.');

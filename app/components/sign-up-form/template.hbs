@@ -1,6 +1,6 @@
 <div class='sign-up-template'>
-  {{email-input email=credentials.email}}
   {{username-input username=credentials.username}}
+  {{email-input email=credentials.email}}
       {{!-- ^ probably incorrect ^ --}}
   {{password-input password=credentials.password}}
   {{password-confirmation-input password=credentials.passwordConfirmation}}
@@ -8,4 +8,7 @@
   <button type="submit" class="btn btn-primary sign-up-button" {{action "submit"}}>
     Sign Up
   </button>
+  {{#each flashMessages.queue as |flash|}}
+    {{flash-message flash=flash}}
+  {{/each}}
 </div>

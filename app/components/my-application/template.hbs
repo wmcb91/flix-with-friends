@@ -3,13 +3,13 @@
     {{navbar-header}}
 
     <div class="collapse navbar-collapse" id="navigation">
-      <ul class="nav navbar-nav">
+      {{!-- <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
-        {{!-- <li>{{#link-to "users"}}Users{{/link-to}}</li> --}}
-        {{!-- <li>{{currentUserEmail}}</li>
-        <li>{{currentUserName}}</li> --}}
+        <li>{{#link-to "users"}}Users{{/link-to}}</li>
+        <li>{{currentUserEmail}}</li>
+        <li>{{currentUserName}}</li>
         {{/if}}
-      </ul>
+      </ul> --}}
       <ul class="nav navbar-nav navbar-right">
         {{#if isAuthenticated}}
         <li>{{#link-to "movies"}}Find Movies{{/link-to}}</li>
@@ -19,17 +19,14 @@
         <li>{{#link-to "change-password"}}Change Password{{/link-to}}</li>
         <li><a href="#" {{action "signOut"}}>Sign Out</a></li>
         {{else}}
-        <li>{{#link-to "sign-up"}}Sign Up{{/link-to}}</li>
-        <li>{{#link-to "sign-in"}}Sign In{{/link-to}}</li>
+        {{!-- <li>{{#link-to "sign-up"}}Sign Up{{/link-to}}</li>
+        <li>{{#link-to "sign-in"}}Sign In{{/link-to}}</li> --}}
         {{/if}}
       </ul>
     </div>
   </div>
 </nav>
 
-{{#each flashMessages.queue as |flash|}}
-  {{flash-message flash=flash}}
-{{/each}}
 
 <div class="col-md-4 col-md-offset-4">
   {{outlet}}

@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   auth: Ember.inject.service(),
 
   currentUserEmail: Ember.computed.alias('auth.credentials.email'),
-  // currentUserName: Ember.computed.alias('profile.surname'),
+  currentUserName: Ember.computed.alias('auth.credentials.username'),
   isAuthenticated: Ember.computed.alias('auth.isAuthenticated'),
 
   actions: {

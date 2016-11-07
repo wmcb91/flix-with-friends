@@ -10,4 +10,7 @@
           class="btn btn-primary sign-in-button" {{action "submit"}}>
     Sign In
   </button>
+  {{#each flashMessages.queue as |flash|}}
+    {{flash-message flash=flash}}
+  {{/each}}
 </div>
