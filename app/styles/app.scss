@@ -1,12 +1,7 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
 
-$black: #000;
-
-// div {
-//   border: 1px dotted $black;
-// }
-
-.ember-text-field {
-  width: 50%;
-}
+@import 'colors';
+@import 'typography';
+@import 'layout';
+@import 'theme';
