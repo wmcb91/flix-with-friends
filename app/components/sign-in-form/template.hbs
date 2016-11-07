@@ -2,11 +2,12 @@
   {{email-input email=credentials.email}}
   {{password-input password=credentials.password}}
 
-  <button type="submit" class="btn btn-primary" {{action "submit"}}>
-    Sign In
-  </button>
+  {{!-- <div class="remember-me-wrapper">
+    {{remember-me-input }}
+  </div> --}}
 
-  <button class="btn btn-default" {{action "reset"}}>
-    Cancel
+  <button type="submit"
+          class="btn btn-primary sign-in-button" {{action "submit"}}>
+    Sign In
   </button>
 </div>
