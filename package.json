@@ -1,7 +1,7 @@
 {
-  "name": "ga-wdi-boston.ember-auth",
+  "name": "flix-with-friends",
   "version": "0.0.0",
-  "description": "ember auth training",
+  "description": "Web app for rating movies",
   "private": true,
   "directories": {
     "doc": "doc",

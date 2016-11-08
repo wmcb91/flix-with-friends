@@ -3,7 +3,7 @@
 module.exports = function (environment) {
   'use strict';
   const ENV = {
-    modulePrefix: 'ga-wdi-boston.ember-auth',
+    modulePrefix: 'flix-with-friends',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -49,7 +49,9 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
+    ENV.baseURL = '/';
     ENV.locationType = 'hash';
+    ENV.apiHost = 'https://flix-with-friends.herokuapp.com';
   }
 
   return ENV;
