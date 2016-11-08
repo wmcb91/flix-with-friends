@@ -13,8 +13,19 @@
   float: left;
 }
 
-// Nav Bar Brand
+
+// ------- NAVBAR -------
+.navbar {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
 .navbar-header {
+  position: static;
+
   .navbar-logo {
     .navbar-brand {
       // padding: 5px;
@@ -22,6 +33,12 @@
     }
   }
 }
+
+// ----- POSITION ALL VIEWS BELOW NAVBAR-------
+.view-space {
+  top: 50px;
+}
+// ----- END ------
 
 
 // Routes
@@ -36,8 +53,6 @@
   }
 }
 
-
-
 // Sign In View & Sign Up View
 .sign-in,
 .sign-up {
@@ -51,12 +66,19 @@
 }
 
 // Add Top Margin in to API Failure Alerts
-.alert-danger {
+.alert-danger,
+.alert-success {
   margin-top: 10px;
 }
 
-// Movies styling
+
+// -------------------- BROWSE MOVIES VIEW ---------------
 .browse-movies {
+  h2 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
   .movie-card {
     box-sizing: border-box;
     margin-bottom: 15px;

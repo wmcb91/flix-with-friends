@@ -47,7 +47,8 @@ export default Ember.Service.extend({
   },
 
   changePassword (passwords) {
-    return this.get('ajax').patch(`/change-password/${this.get('credentials.id')}`, {
+    return this.get('ajax')
+               .patch(`/change-password/${this.get('credentials.id')}`, {
       data: {
         passwords: {
           old: passwords.previous,
