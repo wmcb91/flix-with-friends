@@ -1,5 +1,33 @@
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
 
-.col-md-4 {
+// Syntactical classes
+.float-right {
+  clear: both;
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+// Nav Bar Brand
+.navbar-header {
+  .navbar-logo {
+    .navbar-brand {
+      // padding: 5px;
+      margin-left: 0;
+    }
+  }
+}
+
+
+// Routes
+.sign-in,
+.sign-up,
+.change-password {
   padding: 0;
 
   .form-horizontal .form-group {
@@ -7,6 +35,8 @@
     margin-right: 0;
   }
 }
+
+
 
 // Sign In View & Sign Up View
 .sign-in,
@@ -18,13 +48,22 @@
     margin: 10px;
     text-align: center;
   }
-
-  // .alert-danger {
-  //   margin-top: 10px;
-  // }
 }
 
 // Add Top Margin in to API Failure Alerts
 .alert-danger {
   margin-top: 10px;
+}
+
+// Movies styling
+.browse-movies {
+  .movie-card {
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    // padding: 5px;
+  }
+
+  .movie-title {
+    margin-top: 8px;
+  }
 }

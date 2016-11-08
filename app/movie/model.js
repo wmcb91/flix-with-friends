@@ -5,4 +5,5 @@ export default DS.Model.extend({
   director: DS.attr('string'),
   yearReleased: DS.attr('number'),
   genre: DS.attr('string'),
+  rating: DS.attr('string')
 });
