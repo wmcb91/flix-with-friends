@@ -1,10 +1,21 @@
 
 <div class="movie-card col-md-4 col-md-offset-1">
-  <h4 class="float-right">{{yearReleased}}</h4>
-  <h3 class="movie-title">{{title}}</h3>
-  <h4>{{director}}</h4>
-  <h4>{{genre}}</h4>
-  <h4>{{rating}}</h4>
+  <h3 class="movie-title col-md-10"><em>{{title}}</em></h3>
+  <h4 class="year-released col-md-2">{{yearReleased}}</h4>
+  <h4 class="col-md-10"><small>Director:</small><br> {{director}}</h4>
+  <h4 class="rating col-md-2"><small>Rated:</small> {{rating}}</h4>
+  <h4 class="col-md-8"><small>Genre:</small><br> {{genre}}</h4>
+  <div class="user-rating col-sm-4">
+
+
+    <form {{action 'createScreening' on='submit'}}>
+      {{user-rating-input userRating=userRating}}
+    </form>
+
+    {{!-- <button class="add-rating btn btn-default">Seen It!</button> --}}
+    {{!-- {{star-rating item=movie rating=movie.rating on-click="updateRating"}} --}}
+  </div>
+
   {{!-- <form {{action 'createScreening' on='submit'}}>
     {{input placeholder='Rating out of 5'
             class='input-group form-control'

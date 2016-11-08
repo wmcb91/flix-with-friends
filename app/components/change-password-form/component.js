@@ -9,10 +9,8 @@ export default Ember.Component.extend({
   actions: {
     submit () {
       this.sendAction('submit', this.get('passwords'));
-    },
-
-    reset () {
       this.set('passwords', {});
     },
+
   },
 });

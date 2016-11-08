@@ -3,7 +3,6 @@
   {{input type="password"
           class="form-control"
           id="previous"
-          placeholder="Old password"
           value=passwords.previous}}
 </div>
 
@@ -12,7 +11,6 @@
   {{input type="password"
           class="form-control"
           id="next"
-          placeholder="New password"
           value=passwords.next}}
 </div>
 
@@ -21,7 +19,7 @@
 </button>
 
 <button class="btn btn-default" {{action "reset"}}>
-  Cancel
+  Clear
 </button>
 
 {{#each flashMessages.queue as |flash|}}

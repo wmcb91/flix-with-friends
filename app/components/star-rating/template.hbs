@@ -1,0 +1,7 @@
+{{#star-rating item=movie rating=movie.rating on-click=(action "updateRating")  as |stars set|}}
+  {{#each stars as |star|}}
+    <a {{action set star.rating}}>
+      {{if star.full}}*{{else}}_{{/if}}
+    </a>
+  {{/each}}
+{{/star-rating}}

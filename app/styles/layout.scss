@@ -76,16 +76,45 @@
 .browse-movies {
   h2 {
     margin-bottom: 30px;
+    padding: 0;
     text-align: center;
   }
 
   .movie-card {
     box-sizing: border-box;
     margin-bottom: 15px;
-    // padding: 5px;
+    padding: 0 10px;
+
+    h3 {
+      padding: 0;
+    }
+
+    h4 {
+      margin-top: 0;
+      padding: 0;
+    }
+
+    .movie-title {
+      margin-top: 8px;
+    }
+
+    .year-released {
+      margin-top: 10px;
+      text-align: right;
+    }
+
+    .rating {
+      text-align: right;
+    }
+
+    .user-rating {
+      padding: 7px 0 0 15px;
+    }
+
+    .form-control {
+      padding: 6px;
+      text-align: center;
+    }
   }
 
-  .movie-title {
-    margin-top: 8px;
-  }
 }
