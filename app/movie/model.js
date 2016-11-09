@@ -6,5 +6,6 @@ export default DS.Model.extend({
   yearReleased: DS.attr('number'),
   genre: DS.attr('string'),
   rating: DS.attr('string'),
-  movieId: DS.attr('number'),
+  screenings: DS.hasMany('screening'),
+  users: DS.hasMany('user'),
 });
