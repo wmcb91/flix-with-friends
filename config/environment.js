@@ -49,7 +49,7 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    ENV.baseURL = '/';
+    ENV.rootURL = '/flix-with-friends';
     ENV.locationType = 'hash';
     ENV.apiHost = 'https://flix-with-friends.herokuapp.com';
   }
