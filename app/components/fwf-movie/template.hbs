@@ -6,20 +6,11 @@
   <h4 class="rating col-md-2"><small>Rated:</small> {{rating}}</h4>
   <h4 class="col-md-8"><small>Genre:</small><br> {{genre}}</h4>
   <div class="user-rating col-sm-4">
-
-
     <form {{action 'createScreening' on='submit'}}>
       {{user-rating-input userRating=userRating}}
     </form>
-
     {{!-- <button class="add-rating btn btn-default">Seen It!</button> --}}
-
   </div>
 
-  {{!-- <form {{action 'createScreening' on='submit'}}>
-    {{input placeholder='Rating out of 5'
-            class='input-group form-control'
-            value=form.rating}}
-  </form> --}}
 </div>
 <div class="col-md-1"></div>

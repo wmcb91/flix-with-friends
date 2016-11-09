@@ -6,13 +6,8 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    // createScreening () {
-    //   console.log('in movies route');
-    // }
     createScreening (newScreening) {
-      console.log('newScreening is in movies route', newScreening);
       let screening = this.get('store').createRecord('screening', newScreening);
-      console.log('screening in movie route is', screening);
       return screening.save();
     },
   }
