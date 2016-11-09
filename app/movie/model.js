@@ -7,13 +7,4 @@ export default DS.Model.extend({
   genre: DS.attr('string'),
   rating: DS.attr('string'),
   movieId: DS.attr('number'),
-
-  actions: {
-    createScreening (newScreening) {
-      console.log('screening is in movie model');
-      let screening = this.get('store').createRecord('screening', newScreening);
-      screening.save();
-    }
-  },
-
 });

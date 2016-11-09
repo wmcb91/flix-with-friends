@@ -9,10 +9,10 @@ export default Ember.Component.extend({
     // }
     createScreening () {
       let newScreening = {};
-      newScreening.movieId = this.get('movieId');
+      newScreening.movie = this.get('movieId');
       newScreening.userRating = this.get('userRating');
-      console.log('new screening is', newScreening);
-        this.sendAction('submit', newScreening);
+      console.log('new screening is in fwf-movie comp and is', newScreening);
+        this.sendAction('createScreening', newScreening);
     }
   },
 });

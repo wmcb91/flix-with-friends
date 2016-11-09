@@ -13,6 +13,7 @@ Router.map(function () {
   this.route('my-movies');
   this.route('profile');
   this.route('watch-list');
+  this.route('screenings');
 });
 
 export default Router;
