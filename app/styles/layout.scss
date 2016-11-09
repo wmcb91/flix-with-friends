@@ -73,14 +73,16 @@
 
 
 // -------------------- BROWSE MOVIES VIEW ---------------
-.browse-movies {
+.browse-movies,
+.screenings {
   h2 {
     margin-bottom: 30px;
     padding: 0;
     text-align: center;
   }
 
-  .movie-card {
+  .movie-card,
+  .screening-card {
     box-sizing: border-box;
     margin-bottom: 15px;
     padding: 0 10px;

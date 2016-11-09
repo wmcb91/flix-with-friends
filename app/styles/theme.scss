@@ -13,14 +13,16 @@
 }
 
 // Browse Movies
-.browse-movies {
+.browse-movies,
+.screenings {
+  .screening-card,
   .movie-card {
     background-color: $off-white;
     border: 2px solid $charcoal;
     border-radius: 3px;
   }
 
-  .movie-title {
+  // .movie-title {
 
-  }
+  // }
 }
