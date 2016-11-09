@@ -8,11 +8,11 @@ export default Ember.Component.extend({
     //   this.sendAction('createScreening', this.get('screening'));
     // }
     createScreening () {
-      let screening = {};
-      screening.movieId = this.get('movieId');
-      screening.userRating = this.get('userRating');
-      console.log('screening is', screening);
-        this.sendAction('submit', screening);
+      let newScreening = {};
+      newScreening.movieId = this.get('movieId');
+      newScreening.userRating = this.get('userRating');
+      console.log('new screening is', newScreening);
+        this.sendAction('submit', newScreening);
     }
   },
 });

@@ -6,6 +6,7 @@ export default Ember.Route.extend({
 
   actions: {
     signIn (credentials) {
+      console.log('auth is', this.get('auth'));
       return this.get('auth').signIn(credentials)
       .then(() => this.transitionTo('application'))
       .catch(() => {
