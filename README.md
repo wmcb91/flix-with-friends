@@ -3,7 +3,7 @@
 
 ## Will McBride
 
-# Flix With Friends - A better way to pick movies
+# Flix With Friends - A better way to pick movies 
 
 This game has been created for General Assembly's Web Development Immersive.
 HTML, SCSS, JavaScript, Ember, Ruby on Rails, and Bootstrap were used to
