@@ -1,66 +1,71 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Authentication in Ember
 
-This training will involve a lot of following code and and exploring the
-Chrome Inspector and utilizing Ember Inspector.  It is recommended that you
-comment code or take notes.
+## Will McBride
 
-## Prerequisites
+# Flix With Friends - A better way to pick movies
 
--   [ga-wdi-boston/ember-resources](https://github.com/ga-wdi-boston/ember-resources)
--   [ga-wdi-boston/ember-resources-one-to-many](https://github.com/ga-wdi-boston/ember-resources-one-to-many)
+This game has been created for General Assembly's Web Development Immersive.
+HTML, SCSS, JavaScript, Ember, Ruby on Rails, and Bootstrap were used to
+complete this project.
 
-## Objectives
+Client URL: https://wmcb91.github.io/flix-with-friends/
 
-By the end of this, developers should be able to:
+Client-Repo URL: https://github.com/wmcb91/flix-with-friends
 
--   Implement token authentication in an Ember application.
--   Enforce authentication in protected routes.
+API-Repo URL: https://github.com/wmcb91/flix-with-friends-api
 
-## Preparation
+Wireframe: http://imgur.com/a/FOffG
 
-1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
-    this repository.
-1.  Install dependencies with `npm install` and `bower install`.
-1.  Follow the instructions to setup the [lister-api](https://github.com/ga-wdi-boston/listr-api).
-1.  Start the font-end server with `ember server --proxy http://localhost:3000`.
+ERD: http://imgur.com/a/8W8FG
 
-## From end to end
 
-Watch as I sign up for a new account on our demo app.
+# User Stories:
 
-*Aside from flashy messages on the page did anything change in the Chrome Dev*
-*Tools?*
+- As a user, I want to be able to log in with Facebook
+- As a user, I want to be able to change my password periodically
+- As a user, I want to see a relevant dashboard when I sign in to my account
+- As a user, I want to be able to easily give ratings to movies and see my past ratings
+- As a user, I want to be able to find my friends who also use the app
+- As a user, I want to be able to see the movies they have rated and want to see
+- As a user, I want the app to compare our movies for me so we can compare our lists.
 
-Take some time and sign in on your own, and check to see if anything in the
-Chrome Dev Tools has changed.
+# Planning
 
-Now that we have added a key tool to our personal developer toolkit lets look
-at how it is implimented and the rest of the code.
+I started my planning by writing user stories and whiteboarding a wireframe.
+After I had an idea of the basic features and functions of the app I was able
+to start my ERD. I wanted a user to have the ability to add ratings to movies
+and save movies to watch for later.  Users would have a profile and also have
+many movies, through either a screenings join table (ratings) or a queued-films
+join table (wish-list). Users would also eventually have to be a self join in
+order to have friendships be a feature.
 
-## Follow Along
+# Development Story
 
-As a class let's walk through file by file what is happening. I will ask
-developers to guide me through the files while correcting any misunderstandings.
+On day 1, I spent most of the day planning because I knew I went in to last
+project with less of a plan and it hindered my progress.
 
-First let's start down the template and component trail, then we'll work our way
-up with actions.
 
-*Remember: Data down, actions up.*
+Over the weekend I was when I created my API and tested it thoroughly to make sure users
+owned their data.  I also spent a good deal of time making wireframes online in
+more detail than what I did on the whiteboard. I also started making progress in my client, but things were slow going
+while I was still very much learning Ember. Rendering my sample data was very easy
+thanks to the powers of Ember but getting actions back up from my components was
+much more difficult than with vanilla JavaScript.
 
-While going up the Ember hierarchy we may need to stop a some point to discuss
-services.
+The beginning of the week was very slow going since my ability to debug in Ember was weak.
+However, I know I could make as much progress as I did in my first five days in just one day on my
+sixth day of learning Ember.
 
-## Additional Resources
 
--   [Implementing Authentication with Ember Services - Ember Igniter](http://emberigniter.com/implementing-authentication-with-ember-services/)
--   [jpadilla/ember-simple-auth-token: Ember Simple Auth extension that is compatible with token-based authentication like JWT.](https://github.com/jpadilla/ember-simple-auth-token)
--   [simplabs/ember-simple-auth: A library for implementing authentication/authorization in Ember.js applications.](https://github.com/simplabs/ember-simple-auth)
--   [Create your first Ember 2.0 app: From authentication to calling an API](https://auth0.com/blog/2015/08/11/create-your-first-ember-2-dot-0-app-from-authentication-to-calling-an-api/)
 
-## [License](LICENSE)
+# Future Changes
+- Add the ability to log in the facebook or google.
 
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
+- Improve styling and UX to explain to the user how they can use the app
+
+- Add a wish-list for movies you want to watch.
+
+- Add the ability to make friendships with other users so you can compare your watching history.
+
+- Connect to a third party movie database API.
