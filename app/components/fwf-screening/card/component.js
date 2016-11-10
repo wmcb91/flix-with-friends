@@ -2,14 +2,13 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    edit (screening) {
-      let editedScreening = {};
-      editedScreening.movie = this.get('movie');
-      editedScreening.userRating = this.get('newRating');
-      console.log('new rating is in fwf-screening comp and is', editedScreening);
-      console.log(screening);
-      console.log('this screening is', this.screening);
-        this.sendAction('updateScreening', editedScreening);
+    edit () {
+      // console.log('old rating is', this.screening.get('userRating'));
+      // console.log('new rating is', this.get('newRating'));
+      // this.screening.set('userRating', this.get('newRating'));
+      // console.log('new set rating is', this.screening.get('userRating'));
+
+      this.sendAction('updateScreening', this.screening, this.get('newRating'));
     },
 
     delete () {
