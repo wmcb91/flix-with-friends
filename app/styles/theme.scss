@@ -1,4 +1,9 @@
 // Sign In and Sign up View
+body {
+  background-color: $grass;
+}
+
+
 .sign-in,
 .sign-up {
   background-color: $off-white;
@@ -30,8 +35,17 @@
     padding: 0;
     text-align: center;
   }
+}
 
-  // .movie-title {
+.app-title {
+  color: $ash;
+  font-family: $pathway-gothic;
+  font-size: 16vw;
+  margin-top: 16vh;
+  text-align: center;
+  text-shadow: 7px 4px 3px $black;
+}
 
-  // }
+.h2 {
+  color: $off-white;
 }
