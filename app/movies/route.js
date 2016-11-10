@@ -7,6 +7,7 @@ export default Ember.Route.extend({
 
   actions: {
     createScreening (newScreening) {
+      console.log('new screening is', newScreening);
       let screening = this.get('store').createRecord('screening', newScreening);
       return screening.save();
     },

@@ -2,10 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-      // edit (list) {
-      //   console.log('I am in the listr-list Component');
-      //   this.sendAction('list.edit', list);
-      // },
+      updateScreening (editedScreening) {
+        console.log('I am in the listr-list Component');
+        console.log('editedScreening is', editedScreening);
+        return this.sendAction('updateScreening', editedScreening);
+      },
 
       deleteScreening (screening) {
         console.log('in fwf-screening component deleteScreening action');

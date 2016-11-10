@@ -7,13 +7,21 @@
 <h4 class="col-md-9"><small>Director:</small><br>{{director}}</h4>
 <h4 class="user-rating col-md-3">
   <small class="normal-spacing">Your Rating:</small><br>
-  <button class="pencil" {{action 'edit' screening}}>
+  {{!-- <button class="pencil" {{action 'edit' screening}}>
     <span class="edit-rating glyphicon glyphicon-pencil"
         aria-hidden="true"></span>
-  </button>
+  </button> --}}
         &#32;{{userRating}}/5
 </h4>
-  {{!-- <form {{action 'createScreening' on='submit'}}>
-    {{user-rating-input userRating=userRating}}
-  </form> --}}
-  {{!-- <button class="add-rating btn btn-default">Seen It!</button> --}}
+<div class="edit-rating col-md-5 col-md-offset-7">
+  <h5>Update Rating</h5>
+  <form {{action 'edit' on='submit'}}>
+    {{user-rating-input userRating=newRating}}
+  </form>
+</div>
+
+{{!-- <button class="add-rating btn btn-default">Seen It!</button> --}}
+{{!-- <button class="pencil" {{action 'edit' screening}}>
+  <span class="edit-rating glyphicon glyphicon-pencil"
+      aria-hidden="true"></span>
+</button> --}}
