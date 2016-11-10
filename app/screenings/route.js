@@ -9,8 +9,8 @@ export default Ember.Route.extend({
   actions: {
     updateScreening (updatedScreening) {
       console.log('I am in the list route and screening is', updatedScreening);
-        let newRating = updatedScreening.userRating;
-        let movieId = updatedScreening.movie.get('id');
+        // let newRating = updatedScreening.userRating;
+        // let movieId = updatedScreening.movie.get('id');
         // console.log('new rating is', newRating);
         console.log('screening movie id is', updatedScreening.movie);
         console.log('screening movie id is', updatedScreening.movie_id);
@@ -24,10 +24,8 @@ export default Ember.Route.extend({
     },
 
     deleteScreening (screening) {
-      console.log('in screening route delete action');
-      console.log('passed in screening is', screening);
-      screening = screening;
       screening.deleteRecord();
+      // this.get('store').deleteRecord(screening);
       return screening.save();
     },
   }

@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   actions: {
     createScreening () {
+      console.log('this movie is', this.get('movie'));
       let newScreening = {};
       newScreening.movie = this.get('movie');
       newScreening.userRating = this.get('userRating');

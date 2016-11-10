@@ -13,9 +13,8 @@ export default Ember.Component.extend({
     },
 
     delete () {
-      console.log('in fwf-sc-card component delete');
-      console.log('this.get(movie) is', this.get('movie'));
-      return this.sendAction('delete', this.get('movie'));
+      console.log('screening is', this.get('screening'));
+      return this.sendAction('delete', this.get('screening'));
     }
   },
 });
