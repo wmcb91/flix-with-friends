@@ -3,6 +3,7 @@
   {{#each model as |screening|}}
       {{fwf-screening userRating=screening.userRating
                       movie=screening.movie
+                      deleteScreening='deleteScreening'
                       updateRating='updateRating'}}
   {{/each}}
 </div>

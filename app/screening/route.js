@@ -4,4 +4,5 @@ export default Ember.Route.extend({
   model (params) {
     return this.get('store').findRecord('screening', params.screening_id);
   },
+
 });

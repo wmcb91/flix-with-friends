@@ -1,6 +1,18 @@
 <h3 class="movie-title col-md-10"><em>{{title}}</em>  ({{yearReleased}})</h3>
+<div class="trash col-md-2">
+  <button type='submit' class="trash-button" {{action 'delete' screening}}>
+    <span class="trash glyphicon glyphicon-trash" aria-hidden="true"></span>
+  </button>
+</div>
 <h4 class="col-md-9"><small>Director:</small><br>{{director}}</h4>
-<h4 class="col-md-3"><small>Your Rating:<br></small>{{userRating}}/5</h4>
+<h4 class="user-rating col-md-3">
+  <small class="normal-spacing">Your Rating:</small><br>
+  <button class="pencil" {{action 'edit' screening}}>
+    <span class="edit-rating glyphicon glyphicon-pencil"
+        aria-hidden="true"></span>
+  </button>
+        &#32;{{userRating}}/5
+</h4>
   {{!-- <form {{action 'createScreening' on='submit'}}>
     {{user-rating-input userRating=userRating}}
   </form> --}}
